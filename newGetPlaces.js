@@ -33,7 +33,7 @@ const newGetPlaces = async (url) => {
                
                 const img = await page.$$eval('.section-hero-header-image div button img[src]', imgs => imgs.map(img => img.getAttribute('src')));
                  
-                const adress =  await page.$eval('.target-holder .target', el => el.innerText);
+              
                 // extractedEvaluateCall(page);
                 //await page.screenshot({path: 'screenshots/'+items[index]+'.png'});
               } catch (error) {
